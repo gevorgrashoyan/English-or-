@@ -1,0 +1,157 @@
+[
+{
+	"SchoolName": "LezviDproc",
+	"num_of_studentsRightNow": 151,
+	"num_of_studentsTillNow": 3680,
+	"num_of_LanguagesTaught": 5,
+	"LanguageInfo": {
+		"language_name": "English",
+		"num_of_teachers": 2,
+		"price_of_theCourse": 30000,
+		"goup_info": {
+			"num_of_groups": 6,
+			"num_of_studentsInEach": 10,
+			"entire_num_of_students": {
+				"EntireNum_of_students": 60,
+				"num_of_StudentsInLevel": {
+					"A1": 20,
+					"A2": 10,
+					"B1": 10,
+					"B2": 10,
+					"C1": 5,
+					"C2": 5
+				}
+			}
+		}
+	},
+	"average_age": 15,
+	"StartFinishNUmber": {
+		"just_started": 31,
+		"isaboutto_finish": 20
+	}
+},
+{
+	"SchoolName": "LezviDproc",
+	"num_of_studentsRightNow": 151,
+	"num_of_studentsTillNow": 3680,
+	"num_of_LanguagesTaught": 5,
+	"LanguageInfo": {
+		"language_name": "Armenian",
+		"num_of_teachers": 1,
+		"price_of_theCourse": 15000,
+		"goup_info": {
+			"num_of_groups": 2,
+			"num_of_studentsInEach": 6,
+			"entire_num_of_students": {
+				"EntireNum_of_students": 12,
+				"num_of_StudentsInLevel": {
+					"A1": 0,
+					"A2": 0,
+					"B1": 0,
+					"B2": 0,
+					"C1": 6,
+					"C2": 6
+				}
+			}
+		}
+	},
+	"average_age": 9,
+	"StartFinishNUmber": {
+		"just_started": 6,
+		"isaboutto_finish": 6
+	}
+},
+{
+	"SchoolName": "LezviDproc",
+	"num_of_studentsRightNow": 151,
+	"num_of_studentsTillNow": 3680,
+	"num_of_LanguagesTaught": 5,
+	"LanguageInfo": {
+		"language_name": "Russian",
+		"num_of_teachers": 3,
+		"price_of_theCourse": 25000,
+		"goup_info": {
+			"num_of_groups": 5,
+			"num_of_studentsInEach": 8,
+			"entire_num_of_students": {
+				"EntireNum_of_students": 40,
+				"num_of_StudentsInLevel": {
+					"A1": 16,
+					"A2": 8,
+					"B1": 4,
+					"B2": 4,
+					"C1": 4,
+					"C2": 4
+				}
+			}
+		}
+	},
+	"average_age": 17,
+	"StartFinishNUmber": {
+		"just_started": 24,
+		"isaboutto_finish": 16
+	}
+},
+{
+	"SchoolName": "LezviDproc",
+	"num_of_studentsRightNow": 151,
+	"num_of_studentsTillNow": 3680,
+	"num_of_LanguagesTaught": 5,
+	"LanguageInfo": {
+		"language_name": "German",
+		"num_of_teachers": 4,
+		"price_of_theCourse": 45000,
+		"goup_info": {
+			"num_of_groups": 9,
+			"num_of_studentsInEach": 2,
+			"entire_num_of_students": {
+				"EntireNum_of_students": 18,
+				"num_of_StudentsInLevel": {
+					"A1": 8,
+					"A2": 6,
+					"B1": 4,
+					"B2": 0,
+					"C1": 0,
+					"C2": 0
+				}
+			}
+		}
+	},
+	"average_age": 23,
+	"StartFinishNUmber": {
+		"just_started": 4,
+		"isaboutto_finish": 16
+	}
+},
+{
+	"SchoolName": "LezviDproc",
+	"num_of_studentsRightNow": 151,
+	"num_of_studentsTillNow": 3680,
+	"num_of_LanguagesTaught": 5,
+	"LanguageInfo": {
+		"language_name": "French",
+		"num_of_teachers": 2,
+		"price_of_theCourse": 35000,
+		"goup_info": {
+			"num_of_groups": 3,
+			"num_of_studentsInEach": 7,
+			"entire_num_of_students": {
+				"EntireNum_of_students": 21,
+				"num_of_StudentsInLevel": {
+					"A1": 21,
+					"A2": 0,
+					"B1": 0,
+					"B2": 0,
+					"C1": 0,
+					"C2": 0
+				}
+			}
+		}
+	},
+	"average_age": 20,
+	"StartFinishNUmber": {
+		"just_started": 21,
+		"isaboutto_finish": 0
+	}
+}
+]

@@ -20,39 +20,55 @@ def addSchool():
     school = {
         "SchoolName" : "",
         "num_of_studentsRightNow" : 0,
-	"num_of_studentsTillNow" : 0,
+	    "num_of_studentsTillNow" : 0,
         "num_of_LanguagesTaught" : 0,
         "LanguageInfo" : {
-		"language_name" : "",
-		"goup_info" : {
-			"num_of_groups" : 0,
-			"num_of_studentsInEach" : 0,
-			"entire_num_of_studets" : 0 {
-				"num_of_StudentsInLevel" : { 
-					"A1" : 0,
-					"A2" : 0,
-					"B1" : 0,
-					"B2" : 0,
-					"C1" : 0
-					"C2" : 0
-			}
+		    "language_name" : "",
+	            "num_of_teachers" : 0,
+		    "price_of_theCourse" : 0
+		    "goup_info" : {
+		            "num_of_groups" : 0,
+		            "num_of_studentsInEach" : 0,
+		            "entire_num_of_students" : {
+		                "EntireNum_of_students" : 0,
+		                "num_of_StudentsInLevel" : { 
+		                    "A1" : 0,
+		                    "A2" : 0,
+		                    "B1" : 0,
+		                    "B2" : 0,
+		                    "C1" : 0,
+		                    "C2" : 0
+		                }
+		            }
+			    
+		        }
+		},
+		"average_age" : 0,
+		"Month_Data" : {
+		        "start" : 0,
+		        "finish" : 0
 		}
-		"num_of_teachers" : 0,
-		"price_of_theCourse" : 0
-	},
-        "average_age" : 0,
-        "Month_Data" : {
-                "finish" : 0,
-                "start" : 0
-        } : []
+	    };
 
     school["SchoolName"] = input("Please insert the name of the school: ")
     school["num_of_studentsRightNow"] = getNumericInput("Please insert the number of students currently studying in this school: ")
     school["num_of_studentsTillNow"] = getNumericInput("Please insert the number of students that this school has ever had: ")
     school["num_of_LanguagesTaught"] = getNumericInput("Please insert the number of languages that are being taught now in the school: ")
-    school["LanguageInfo"] = 
-    school["average_age"] = getNumericInput("Please insert the avarage age of school members: ")
-    school["Month_Dataw"] = 
+    school["LanguageInfo"]["language_name"] = "Please insert the name of the lanuage"
+    school["languageInfo"]["group_info"]["num_of_groups"] = getNumericInput("Please insert the number of groups studying the language: ")
+    school["languageInfo"]["group_info"]["num_of_studentsInEach"] = getNumericInput("Please insert the number of students in each group: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["EntireNum_of_students"] = getNumericInput("Please insert the number of students entire number of students studying this language: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying A1 level: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying A2 level: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying B1 level: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying B2 level: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying C1 level: ")
+    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying C2 level: ")
+    school["languageInfo"]["num_of_teachers"] = getNumericInput("Please insert the number of teachers teaching this language: ")
+    school["languageInfo"]["price_of_theCourse"] = getNumericInput("Please insert the price of the course: ")
+    school["average_age"] = getNumericInput("Please insert the avarage age of the students: ")
+    school["Month_Data"]["start"] = input("Please insert the month when this languae courses begin: ")
+    school["Month_Dataw"]["finish"] = input("Please insert the month when this language cources end: ")
 
 def loadExistingSchools():
     with open('schools.json') as file_data:
