@@ -22,11 +22,11 @@ def addSchool():
 	"num_of_studentsRightNow": 0,
 	"num_of_studentsTillNow": 0,
 	"num_of_LanguagesTaught": 0,
-	"LanguageInfo": {
+	"languageInfo": {
 		"language_name": "",
 		"num_of_teachers": 0,
 		"price_of_theCourse": 0,
-		"goup_info": {
+		"group_info": {
 			"num_of_groups": 0,
 			"num_of_studentsInEach": 0,
 			"entire_num_of_students": {
@@ -53,21 +53,21 @@ def addSchool():
     school["num_of_studentsRightNow"] = getNumericInput("Please insert the number of students currently studying in this school: ")
     school["num_of_studentsTillNow"] = getNumericInput("Please insert the number of students that this school has ever had: ")
     school["num_of_LanguagesTaught"] = getNumericInput("Please insert the number of languages that are being taught now in the school: ")
-    school["LanguageInfo"]["language_name"] = input("Please insert the name of the lanuage")
+    school["languageInfo"]["language_name"] = input("Please insert the name of the lanuage: ")
     school["languageInfo"]["num_of_teachers"] = getNumericInput("Please insert the number of teachers teaching this language: ")
     school["languageInfo"]["price_of_theCourse"] = getNumericInput("Please insert the price of the course: ")
     school["languageInfo"]["group_info"]["num_of_groups"] = getNumericInput("Please insert the number of groups studying the language: ")
     school["languageInfo"]["group_info"]["num_of_studentsInEach"] = getNumericInput("Please insert the number of students in each group: ")
     school["languageInfo"]["group_info"]["entire_num_of_students"]["EntireNum_of_students"] = getNumericInput("Please insert the number of students entire number of students studying this language: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying A1 level: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["A2"] = getNumericInput("Please insert the number of students studying A2 level: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["B1"] = getNumericInput("Please insert the number of students studying B1 level: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["B2"] = getNumericInput("Please insert the number of students studying B2 level: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["C1"] = getNumericInput("Please insert the number of students studying C1 level: ")
-    school["languageInfo"]["group_info"]["num_of_StudentsInLevel"]["C2"] = getNumericInput("Please insert the number of students studying C2 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["A1"] = getNumericInput("Please insert the number of students studying A1 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["A2"] = getNumericInput("Please insert the number of students studying A2 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["B1"] = getNumericInput("Please insert the number of students studying B1 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["B2"] = getNumericInput("Please insert the number of students studying B2 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["C1"] = getNumericInput("Please insert the number of students studying C1 level: ")
+    school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["C2"] = getNumericInput("Please insert the number of students studying C2 level: ")
     school["average_age"] = getNumericInput("Please insert the avarage age of the students: ")
-    school["StartFinishNUmber"]["just_started"] = getNumericInput("Please insert the month when this languae courses begin: ")
-    school["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the month when this language cources end: ")
+    school["StartFinishNUmber"]["just_started"] = getNumericInput("Please insert the number of students that are going to start the course: ")
+    school["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the number of students that are going to finish the course:: ")
 
 def loadExistingSchools():
     with open('schools.json') as file_data:
@@ -86,7 +86,7 @@ def main():
     schools = loadExistingSchools()
 
     while(True):
-        insert_mode = input("Do you want to start adding language schools?, please answer yes or no")
+        insert_mode = input("Do you want to start adding language schools?, please answer yes or no: ")
         if(insert_mode == "no"):
             print("Goodbye")
             break
@@ -99,3 +99,4 @@ def main():
     displayAllSchools(schools)
 
 main()
+
