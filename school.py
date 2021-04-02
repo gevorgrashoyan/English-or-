@@ -47,9 +47,7 @@ def addSchool():
 		"just_started": 0,
 		"isaboutto_finish": 0
 	}
-};
-
-    school["SchoolName"] = input("Please insert the name of the school: ")
+	school["SchoolName"] = input("Please insert the name of the school: ")
     school["num_of_studentsRightNow"] = getNumericInput("Please insert the number of students currently studying in this school: ")
     school["num_of_studentsTillNow"] = getNumericInput("Please insert the number of students that this school has ever had: ")
     school["num_of_LanguagesTaught"] = getNumericInput("Please insert the number of languages that are being taught now in the school: ")
@@ -67,7 +65,8 @@ def addSchool():
     school["languageInfo"]["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["C2"] = getNumericInput("Please insert the number of students studying C2 level: ")
     school["average_age"] = getNumericInput("Please insert the avarage age of the students: ")
     school["StartFinishNUmber"]["just_started"] = getNumericInput("Please insert the number of students that are going to start the course: ")
-    school["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the number of students that are going to finish the course:: ")
+    school["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the number of students that are going to finish the course: ")
+};
 
 def loadExistingSchools():
     with open('schools.json') as file_data:
