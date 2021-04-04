@@ -24,6 +24,11 @@
                 "C2": 0
               }
             }
+          },
+          "average_age": 14,
+          "StartFinishNUmber": {
+            "just_started": 25,
+            "isaboutto_finish": 10
           }
         },
         {
@@ -44,6 +49,11 @@
                 "C2": 0
               }
             }
+          },
+          "average_age": 10,
+          "StartFinishNUmber": {
+            "just_started": 6,
+            "isaboutto_finish": 6
           }
         },
         {
@@ -64,14 +74,14 @@
                 "C2": 0
               }
             }
+          },
+          "average_age": 16,
+          "StartFinishNUmber": {
+            "just_started": 12,
+            "isaboutto_finish": 4
           }
         }
       ]
-    ],
-    "average_age": 16,
-    "StartFinishNUmber": {
-      "just_started": 12,
-      "isaboutto_finish": 4
-    }
+    ]
   }
 ]

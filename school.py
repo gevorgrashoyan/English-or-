@@ -14,7 +14,7 @@ def getNumericInput(displayString):
             user_data = int(user_data)
             return user_data
         else:
-            print("Please insert a number")
+            print("Please insert a number only")
 
 def addLanguage():
     language = {
@@ -33,11 +33,16 @@ def addLanguage():
 				"B2": 0,
 				"C1": 0,
 				"C2": 0
+				}
 			}
+		},		
+	"average_age": 0,
+	"StartFinishNUmber": {
+		"just_started": 0,
+		"isaboutto_finish": 0
 		}
-	}
     }
-
+    	
     language["language_name"] = input("Please insert the name of the lanuage: ")
     language["num_of_teachers"] = getNumericInput("Please insert the number of teachers teaching this language: ")
     language["price_of_theCourse"] = getNumericInput("Please insert the price of the course: ")
@@ -50,8 +55,11 @@ def addLanguage():
     language["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["B2"] = getNumericInput("Please insert the number of students studying B2 level: ")
     language["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["C1"] = getNumericInput("Please insert the number of students studying C1 level: ")
     language["group_info"]["entire_num_of_students"]["num_of_StudentsInLevel"]["C2"] = getNumericInput("Please insert the number of students studying C2 level: ")
+    language["average_age"] = getNumericInput("Please insert the avarage age of the students: ")
+    language["StartFinishNUmber"]["just_started"] = getNumericInput("Please insert the number of students that are going to start the course: ")
+    language["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the number of students that are going to finish the course: ")
     return language
-
+    
 def addSchool():
     school = {
 	"SchoolName": "",
@@ -59,14 +67,9 @@ def addSchool():
 	"num_of_studentsTillNow": 0,
 	"num_of_LanguagesTaught": 0,
 	"languages" : [],
-	"average_age": 0,
-	"StartFinishNUmber": {
-		"just_started": 0,
-		"isaboutto_finish": 0
 	}
-    }
     languages = []
-
+    
     school["SchoolName"] = input("Please insert the name of the school: ")
     school["num_of_studentsRightNow"] = getNumericInput("Please insert the number of students currently studying in this school: ")
     school["num_of_studentsTillNow"] = getNumericInput("Please insert the number of students that this school has ever had: ")
@@ -74,12 +77,8 @@ def addSchool():
     for i in range(school["num_of_LanguagesTaught"]):
         languages.append(addLanguage())
     school["languages"].append(languages)
-    school["average_age"] = getNumericInput("Please insert the avarage age of the students: ")
-    school["StartFinishNUmber"]["just_started"] = getNumericInput("Please insert the number of students that are going to start the course: ")
-    school["StartFinishNUmber"]["isaboutto_finish"] = getNumericInput("Please insert the number of students that are going to finish the course: ")
     return school
-
-
+    
 def loadExistingSchools():
     with open('schools.json') as file_data:
         print(file_data)
