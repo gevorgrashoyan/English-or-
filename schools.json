@@ -1,4 +1,77 @@
 [
-  null,
-  null
+  {
+    "SchoolName": "Lezvi Dproc 1",
+    "num_of_studentsRightNow": 72,
+    "num_of_studentsTillNow": 190,
+    "num_of_LanguagesTaught": 3,
+    "languages": [
+      [
+        {
+          "language_name": "English",
+          "num_of_teachers": 2,
+          "price_of_theCourse": 28000,
+          "group_info": {
+            "num_of_groups": 8,
+            "num_of_studentsInEach": 5,
+            "entire_num_of_students": {
+              "EntireNum_of_students": 40,
+              "num_of_StudentsInLevel": {
+                "A1": 15,
+                "A2": 20,
+                "B1": 5,
+                "B2": 0,
+                "C1": 0,
+                "C2": 0
+              }
+            }
+          }
+        },
+        {
+          "language_name": "Armenian",
+          "num_of_teachers": 1,
+          "price_of_theCourse": 16000,
+          "group_info": {
+            "num_of_groups": 2,
+            "num_of_studentsInEach": 6,
+            "entire_num_of_students": {
+              "EntireNum_of_students": 12,
+              "num_of_StudentsInLevel": {
+                "A1": 0,
+                "A2": 0,
+                "B1": 0,
+                "B2": 6,
+                "C1": 6,
+                "C2": 0
+              }
+            }
+          }
+        },
+        {
+          "language_name": "Russian",
+          "num_of_teachers": 2,
+          "price_of_theCourse": 21000,
+          "group_info": {
+            "num_of_groups": 5,
+            "num_of_studentsInEach": 4,
+            "entire_num_of_students": {
+              "EntireNum_of_students": 20,
+              "num_of_StudentsInLevel": {
+                "A1": 4,
+                "A2": 8,
+                "B1": 4,
+                "B2": 4,
+                "C1": 0,
+                "C2": 0
+              }
+            }
+          }
+        }
+      ]
+    ],
+    "average_age": 16,
+    "StartFinishNUmber": {
+      "just_started": 12,
+      "isaboutto_finish": 4
+    }
+  }
 ]
