@@ -6,7 +6,6 @@ def displayAllSchools(schools):
 		for current_key in current_school:
 			print(current_key, ":", current_school[current_key])
 
-
 def getNumericInput(displayString):
     while(True):
         user_data = input(displayString)
@@ -15,6 +14,12 @@ def getNumericInput(displayString):
             return user_data
         else:
             print("Please insert a number only")
+
+def check_for_school(SchoolName, schools):
+    for school in schools:
+        s = school["SchoolName"]
+        if(SchoolName == s):
+            return school
 
 def addLanguage():
     language = {
@@ -81,7 +86,6 @@ def addSchool():
     
 def loadExistingSchools():
     with open('schools.json') as file_data:
-        print(file_data)
         schools = json.load(file_data)
         return schools
 
@@ -98,8 +102,8 @@ def main():
     while(True):
         insert_mode = input("Do you want to start adding language schools?, please answer yes or no: ")
         if(insert_mode == "no"):
-            print("Goodbye")
-            break
+            SchoolName =input("Enter school name: ")
+            n = check_for_school(SchoolName, schools)
         else:
             school = addSchool()
             schools.append(school)
