@@ -1,5 +1,6 @@
 import json
 
+
 def displayAllSchools(schools):
 	print("")
 	for current_school in schools:
