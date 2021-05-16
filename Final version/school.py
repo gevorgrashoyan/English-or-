@@ -22,7 +22,7 @@ def check_for_school(SchoolName, schools):
             return school
     return None
 
-def addLanguage():
+def addLanguage(LanguageName):
     language = {
         "language_name": "",
         "num_of_teachers": 0,
@@ -40,7 +40,7 @@ def addLanguage():
         }
     }
     	
-    language["language_name"] = input("Please enter the name of the language: ")
+    language["language_name"] = LanguageName
     language["num_of_teachers"] = getNumericInput("Please enter the number of teachers teaching this language: ")
     language["price_of_theCourse"] = getNumericInput("Please enter the price of the course: ")
     language["num_of_groups"] = getNumericInput("Please enter the number of groups studying the language: ")
@@ -60,7 +60,7 @@ def addSchool(SchoolName):
 	"num_of_studentsRightNow": 0,
 	"num_of_studentsTillNow": 0,
 	"num_of_LanguagesTaught": 0,
-	"languages" : {},
+	"languages" : [],
 	}
     languages = []
     
@@ -69,8 +69,9 @@ def addSchool(SchoolName):
     school["num_of_studentsTillNow"] = getNumericInput("Please enter the number of students that this school has ever had: ")
     school["num_of_LanguagesTaught"] = getNumericInput("Please enter the number of languages that are being taught now in the school: ")
     for i in range(school["num_of_LanguagesTaught"]):
-         languages.append(addLanguage())
-    school["languages"] =(languages)
+         LanguageName = input("Please enter the name of the language: ")
+         languages.append(addLanguage(LanguageName))
+    school["languages"] = languages
     return school
     
 def mostPopularLanguage(schools):
@@ -80,9 +81,9 @@ def mostPopularLanguage(schools):
         for language in school["languages"]:
               if language["entire_num_of_students"] > students:
                   students = language["entire_num_of_students"]
-                  language = language["language_name"]
+                  languageName = language["language_name"]
         if students > 0:
-              print("The most popular language at ", school["SchoolName"], " is ", language, " with ", students, " students")
+              print("The most popular language at ", school["SchoolName"], " is ", languageName, " with ", students, " students")
 
 def loadExistingSchools():
     with open('schools.json') as file_data:
